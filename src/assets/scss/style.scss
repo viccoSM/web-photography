@@ -52,6 +52,17 @@
 @import "utilities/api";
 // scss-docs-end import-stack
 
+.App {
+  background: linear-gradient(to top, #23506a, #3a2b31) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Roboto";
+}
+
 .landing-page {
   background-image: linear-gradient(to right, #23506a, #3a2b31);
   font-family: "Roboto";
@@ -85,4 +96,21 @@ footer {
   height: 55px;
   background-color: $gray-700;
   color: $white;
+}
+
+form {
+  padding: 30px;
+  background-color: #254b63;
+  margin: auto;
+  width: 400px;
+  align-items: center;
+  color: $white;
+  mix-blend-mode: color-dodge;
+  .input-text {
+    margin-top: 0.5rem;
+    width: 280px;
+  }
+  .btn {
+    width: 310px;
+  }
 }

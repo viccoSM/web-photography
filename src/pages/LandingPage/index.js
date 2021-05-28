@@ -1,6 +1,5 @@
 import React from "react";
-import { Button } from "../../components/atom";
-import { Footer, Header, Hero } from "../../components/Organisme";
+import { Header, Hero } from "../../components/Organisme";
 
 const LandingPage = () => {
   return (

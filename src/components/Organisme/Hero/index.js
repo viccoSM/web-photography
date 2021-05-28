@@ -1,8 +1,9 @@
 import React from "react";
 import ImgHero from "../../../assets/images/imgHero.png";
-import { Button } from "../../atom";
+import { Button, TextField } from "../../atom";
 
-const index = () => {
+const index = (props) => {
+  // const { data, checkout } = props;
   return (
     <section className="hero jumbotron">
       <div className="container">
