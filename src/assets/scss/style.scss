@@ -68,6 +68,14 @@
   font-family: "Roboto";
 }
 
+a {
+  color: $white;
+  text-decoration: none;
+  &:hover {
+    color: $white;
+  }
+}
+
 header {
   color: $white;
   width: 100%;
@@ -81,6 +89,7 @@ header {
           padding-left: 1rem;
           padding-right: 1rem;
           margin-left: 24px;
+          color: $white;
         }
       }
     }
@@ -89,6 +98,14 @@ header {
 
 .hero {
   color: $white;
+  height: 100vh;
+  .img-cover {
+    position: relative;
+    img {
+      position: absolute;
+      top: -30px;
+    }
+  }
 }
 
 footer {
@@ -107,7 +124,7 @@ form {
   color: $white;
   mix-blend-mode: color-dodge;
   .input-text {
-    margin-top: 0.5rem;
+    margin-top: 20px;
     width: 280px;
   }
   .btn {

@@ -28,7 +28,6 @@ export default function TextField(props) {
         value: event.target.value,
       },
     };
-
     if (type === "email") {
       if (!pattern.test(event.target.value)) setHasError(errorResponse);
       else setHasError(null);
