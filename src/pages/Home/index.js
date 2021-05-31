@@ -1,10 +1,12 @@
 import React from "react";
-import { Header } from "../../components/Organisme";
+import { Header, Hero } from "../../components/Organisme";
+import Profile from "../../config/json/profile.json";
 
 const HOme = () => {
   return (
     <>
       <Header home />
+      <Hero home data={Profile.profile} />
     </>
   );
 };

@@ -1,3 +1,4 @@
 import SearchBar from "./SearchBar";
+import Profile from "./Profile";
 
-export { SearchBar };
+export { SearchBar, Profile };

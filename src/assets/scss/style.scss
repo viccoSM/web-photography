@@ -80,7 +80,7 @@ header {
   color: $white;
   width: 100%;
   position: relative;
-  // margin-bottom: 32px;
+  margin-bottom: -20px;
   .navbar {
     height: 80px;
     .navbar-nav {
@@ -105,6 +105,31 @@ header {
       position: absolute;
       top: -30px;
     }
+  }
+}
+.profile {
+  width: 550px;
+  color: white;
+  .row {
+    height: 370px;
+  }
+}
+
+.hero-home {
+  position: relative;
+  // height: 100vh;
+  .home {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // mix-blend-mode: soft-light;
+  }
+  .form-profile {
+    position: absolute;
+    // top: 0;
+    bottom: -110px;
+    // right: 200px;
+    left: 50px;
   }
 }
 

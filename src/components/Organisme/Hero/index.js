@@ -2,9 +2,34 @@ import React from "react";
 import { Fade } from "react-reveal";
 import ImgHero from "../../../assets/images/imgHero.png";
 import { Button, TextField } from "../../atom";
+import { Profile } from "../../molekul";
 
 const index = (props) => {
-  // const { data, checkout } = props;
+  // const { imgCover, imgProfile } = props;
+
+  if (props.home)
+    return (
+      <Fade>
+        <div className="hero-home">
+          <section
+            className="home"
+            style={{
+              height: 570,
+              backgroundImage: `url(${props.data.imgCover}) `,
+              mixBlendMode: "soft-light",
+            }}
+          ></section>
+          <div className="form-profile">
+            <Profile
+              imgUrl={props.data.imgProfile}
+              name={props.data.userName}
+              email={props.data.email}
+            />
+          </div>
+        </div>
+      </Fade>
+    );
+
   return (
     <Fade bottom>
       <section className="hero jumbotron">

@@ -15,7 +15,7 @@ const SearchBar = (props) => {
       />
       <Button
         type="link"
-        onClick
+        onClick={props.onClick}
         style={{ height: 30 }}
         children={<img src={Search} />}
       />
